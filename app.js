@@ -4,7 +4,7 @@ let min = Math.floor((Math.random() * 10) + 1),
     winningNum = min + Math.round(Math.random() * 5),
     guessesLeft = 3;
 
-console.log(`Winning guess : ${winningNum}`);
+//console.log(`Winning guess : ${winningNum}`);
 
 // let coolPng = document.createElement('span');
 // coolPng.innerHTML = `<img src="./img/cool.png" alt="cool">`;
@@ -41,11 +41,11 @@ submitBtn.addEventListener('click', () => {
         inputUi.disabled = true;
         playAgainFunction();
     } else if (guessesLeft != 0) {
-        validator(`Incorrect input! more guesses left`, 'red');
+        validator(`Incorrect input! ${guessesLeft} more guesses left`, 'red');
         //inputUi.disabled = true;
         guessesLeft--;
     } else {
-        validator(`You loose ${sadPng}! Better luck next time`, 'red');
+        validator(`You loose! Better luck next time`, 'red');
         inputUi.disabled = true;
         playAgainFunction();
     }
