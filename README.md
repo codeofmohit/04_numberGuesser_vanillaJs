@@ -1,4 +1,4 @@
-# Project type : 
+# Project description : 
 Self assigned passion project | Very good practice of Math object and Conditions 
 # Skills tested : 
 javaScript / skeletonCss
